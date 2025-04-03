@@ -4,6 +4,7 @@
 Este projeto implementa uma automacao para o envio de mensagens via WhatsApp Web utilizando Python. O script recebe um numero de telefone e executa uma serie de tarefas definidas em um arquivo CSV para interagir com a interface do WhatsApp Web automaticamente.
 
 ## Funcionalidades
+
 - Abertura automatizada do WhatsApp Web no navegador.
 - Execucao de tarefas predefinidas, como:
   - Esperar um tempo especificado.
