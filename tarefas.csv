@@ -1,0 +1,6 @@
+Tarefa,Tipo,Dado
+Abrir WhatsApp,abrir,whatsapp
+Esperar,espera,10
+Clicar no campo de mensagem,clique,"1040,972"
+Digitar Mensagem,digitar,"Oie, esta é uma mensagem automática!"
+Pressionar Enter,tecla,enter

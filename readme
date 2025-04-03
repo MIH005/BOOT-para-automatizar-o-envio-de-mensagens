@@ -1,0 +1,57 @@
+# Automacao de Envio de Mensagens via WhatsApp Web
+
+## Descricao
+Este projeto implementa uma automacao para o envio de mensagens via WhatsApp Web utilizando Python. O script recebe um numero de telefone e executa uma serie de tarefas definidas em um arquivo CSV para interagir com a interface do WhatsApp Web automaticamente.
+
+## Funcionalidades
+- Abertura automatizada do WhatsApp Web no navegador.
+- Execucao de tarefas predefinidas, como:
+  - Esperar um tempo especificado.
+  - Clicar em coordenadas especificas da tela.
+  - Digitar um texto.
+  - Pressionar teclas.
+- Registro de execucao e tempo gasto em cada tarefa.
+- Gera um relatorio em formato Excel (XLSX) ao final da execucao.
+
+## Requisitos
+- Python 3.x
+- Bibliotecas necessarias:
+  - pandas
+  - pyautogui
+  - openpyxl
+
+Para instalar as dependencias, utilize o seguinte comando:
+```bash
+pip install pandas pyautogui openpyxl
+```
+
+## Como Usar
+1. Certifique-se de que o WhatsApp Web esteja previamente autenticado no navegador padrao.
+2. Crie um arquivo CSV chamado `tarefas.csv` contendo as tarefas a serem executadas. O formato do arquivo deve ser:
+
+```csv
+Tipo,Dado
+abrir,
+espera,5
+digitar,Olá! Esta é uma mensagem automática.
+tecla,enter
+```
+
+3. Execute o script:
+```bash
+python nome_do_arquivo.py
+```
+4. Digite o numero do contato (somente numeros, sem +55) quando solicitado.
+5. O script executara as tarefas conforme definidas no CSV e gerara um relatorio em um arquivo XLSX.
+
+## Estrutura do Projeto
+```
+/
+|-- nome_do_arquivo.py
+|-- tarefas.csv
+|-- relatorio_execucao/ (diretorio onde os relatorios serao salvos)
+```
+
+## Autor
+Emilly Lourenço da Silva
+
